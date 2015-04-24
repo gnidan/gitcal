@@ -5,7 +5,7 @@ class CalendarController < ApplicationController
     @repository = Repository.new("$DFHOME/www")
     @calendar = Icalendar::Calendar.new
 
-    events = @repository.commit_events_from('gnidan')
+    events = @repository.commit_events_from(params[:username])
     events.each do |event|
       @calendar.add event.to_ical
     end
