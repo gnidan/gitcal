@@ -1,0 +1,5 @@
+defaults: &defaults
+  workspace: $DFHOME
+
+development:
+  <<: *defaults

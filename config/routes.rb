@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  get ':username' => 'calendar#index'
+  get 'commits/:repo/:username' => 'calendar#commits'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

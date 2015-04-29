@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'icalendar'
 class CalendarController < ApplicationController
-  def index
-    @repository = Repository.new("$DFHOME/www")
+  def commits
+    repo_path = "#{Settings.workspace}/#{params[:repo]}"
+    @repository = Repository.new(repo_path)
     @calendar = Icalendar::Calendar.new
 
     events = @repository.commit_events_from(params[:username])

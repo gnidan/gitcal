@@ -48,4 +48,6 @@ gem 'icalendar', '~> 1.2.3'
 
 gem 'github_api'
 
+gem 'settingslogic'
+
 gem 'awesome_print'
