@@ -2,7 +2,7 @@ class GithubEvent
   def initialize(num, title, date, body='')
     @num = num
     @title = title
-    @date = date
+    @date = date.localtime
     @body = body
   end
 

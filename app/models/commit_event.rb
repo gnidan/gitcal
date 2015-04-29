@@ -1,7 +1,7 @@
 class CommitEvent
   def initialize(source, date, message, sha)
     @source = source
-    @date = date
+    @date = date.localtime
     @message = message
     @sha = sha
   end
