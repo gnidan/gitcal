@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   get 'commits/:repo/:username' => 'calendar#commits'
+  get 'github/:username' => 'calendar#github'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

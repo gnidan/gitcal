@@ -1,5 +1,7 @@
 defaults: &defaults
   workspace: $DFHOME
+  github:
+    token: nil
 
 development:
   <<: *defaults
